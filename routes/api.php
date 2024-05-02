@@ -13,4 +13,6 @@ Route::prefix('v1')->group(function() {
 
 Route::prefix('v1')->group(function() {
     Route::get('/movies/new', [VidSrcApiController::class, 'fetchNewMoviesResponse']);
+
+    Route::get('/series/new', [VidSrcApiController::class, 'fetchNewSeriesResponse']);
 });
